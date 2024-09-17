@@ -240,12 +240,15 @@
 <template>
   <div id="app" style="background-color:#DCDCDC;">
 
-    <div id="headetitle" style="background-color: white;" >
+    <div id="headetitle" style="position: fixed; top: 0; left: 0; right: 0; z-index: 999;background-color: white">
       <el-row>
-        <el-col>
-          <el-button><</el-button>
-        </el-col>
+        <!-- <el-button style="border: none;padding-top:20px"><</el-button> -->
+        <h3 style="margin: 0 auto;padding:10px 0 10px 0">网格回测</h3>
       </el-row>
+    </div>
+
+    <div>
+      <br><br>
     </div>
 
     <div id="sreach1" class="block" >
@@ -524,6 +527,9 @@
         </el-row>
     </div>
 
+    <div id="confirm" style="background-color: white;display:grid;align-items:center">
+      <el-button :span="24" style="background-color: red;color:white;margin:10px 10px 10px 10px ;">提交回测</el-button>
+    </div>
   </div>
 </template>
 
